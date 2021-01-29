@@ -116,6 +116,7 @@ multiple
 lines`);
 */
 
+/*
 const age = 15;
 
 if (age >= 18) {
@@ -135,3 +136,24 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+*/
+
+// Type conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+console.log(String(1991));
+
+// Type coercion
+console.log("I am " + 35 + " years old");
+console.log("I am " + String(35) + " years old");
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+console.log("23" / 2);
+console.log("23" > "18");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
