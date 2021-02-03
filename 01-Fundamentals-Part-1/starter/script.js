@@ -183,6 +183,7 @@ if (hight) {
 }
 */
 
+/*
 const age = "18";
 if (age === 18) {
   console.log("You just became an adult! (strict)");
@@ -207,3 +208,4 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("Why not use 23?");
 }
+*/
