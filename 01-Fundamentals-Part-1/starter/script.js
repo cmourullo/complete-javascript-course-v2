@@ -160,6 +160,7 @@ n = n - 1;
 console.log(n);
 */
 
+/*
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -179,4 +180,30 @@ if (hight) {
   console.log("Yes, Height is defined");
 } else {
   console.log("Height is UNDEFINED");
+}
+*/
+
+const age = "18";
+if (age === 18) {
+  console.log("You just became an adult! (strict)");
+}
+
+if (age == 18) {
+  console.log("You just became an adult! (loose)");
+}
+
+const favourite = Number(prompt("What's your favorite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log(`Cool! ${favourite} is an amazing number!`);
+} else if (favourite === 7) {
+  console.log(`Cool! ${favourite} is an amazing number too!`);
+} else {
+  console.log(`${favourite} is not 23 or 7`);
+}
+
+if (favourite !== 23) {
+  console.log("Why not use 23?");
 }
