@@ -209,3 +209,18 @@ if (favourite !== 23) {
   console.log("Why not use 23?");
 }
 */
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const isTired = false; // C
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sara is able to drive");
+} else {
+  console.log("Someone esle should drive...");
+}
