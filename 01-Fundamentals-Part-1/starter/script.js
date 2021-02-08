@@ -210,6 +210,7 @@ if (favourite !== 23) {
 }
 */
 
+/*
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
@@ -223,4 +224,30 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log("Sara is able to drive");
 } else {
   console.log("Someone esle should drive...");
+}
+*/
+
+const day = "thursday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Record videos");
+    break;
+  default:
+    console.log("Not a valid day");
 }
