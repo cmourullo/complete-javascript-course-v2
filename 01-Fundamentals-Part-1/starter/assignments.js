@@ -90,3 +90,9 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
+
+console.log(
+  `${country}'s population is ${
+    population > averagePopulation ? "above" : "belog"
+  } average`
+);
