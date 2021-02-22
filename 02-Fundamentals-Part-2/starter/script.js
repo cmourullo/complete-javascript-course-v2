@@ -34,6 +34,7 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
 
+/*
 // function declaration
 function calcAge1(birthYear) {
   return 2037 - birthYear;
@@ -60,3 +61,19 @@ const yearsUntilRetirement = (birthYear, firstname) => {
 };
 
 console.log(yearsUntilRetirement(1991, "Carlos"));
+*/
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
