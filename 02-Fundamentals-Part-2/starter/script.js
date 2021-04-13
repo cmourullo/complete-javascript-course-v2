@@ -80,23 +80,57 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 */
 
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+
+// const yearsUntilRetirement = function (birthYear, firstname) {
+//   const age = calcAge(birthYear);
+//   const retirament = 65 - age;
+//   let message = "";
+
+//   if (retirament > 0) {
+//     message = `${firstname} retires in ${retirament}`;
+//   } else {
+//     message = `${firstname} is already retired`;
+//   }
+
+//   return message;
+// };
+
+// console.log(yearsUntilRetirement(1991, "Jonas"));
+// console.log(yearsUntilRetirement(1970, "Mike"));
+
+const friends = ["Michale", "Steven", "Peter"];
+console.log(friends);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+// We can change a value within a "const" array
+friends[2] = "Jay";
+friends[3] = "Mark";
+console.log(friends);
+
+// But we can not assign a new array
+// friends = ['Bob', 'Alice'];
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, friends];
+console.log(jonas);
+
+// Exercise
 const calcAge = function (birthYear) {
   return 2037 - birthYear;
 };
+const years = [1990, 1967, 2002, 2010, 2018];
 
-const yearsUntilRetirement = function (birthYear, firstname) {
-  const age = calcAge(birthYear);
-  const retirament = 65 - age;
-  let message = "";
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
 
-  if (retirament > 0) {
-    message = `${firstname} retires in ${retirament}`;
-  } else {
-    message = `${firstname} is already retired`;
-  }
-
-  return message;
-};
-
-console.log(yearsUntilRetirement(1991, "Jonas"));
-console.log(yearsUntilRetirement(1970, "Mike"));
+const ages = [age1, age2, age3];
+console.log(ages);
