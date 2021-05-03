@@ -101,6 +101,7 @@ console.log(fruitProcessor(2, 3));
 // console.log(yearsUntilRetirement(1991, "Jonas"));
 // console.log(yearsUntilRetirement(1970, "Mike"));
 
+/*
 const friends = ["Michale", "Steven", "Peter"];
 console.log(friends);
 
@@ -134,3 +135,36 @@ const age3 = calcAge(years[years.length - 1]);
 
 const ages = [age1, age2, age3];
 console.log(ages);
+*/
+
+const friends = ["Michale", "Steven", "Peter"];
+
+// Add elements
+const newLenght = friends.push("Jay");
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift("John");
+console.log(friends);
+
+// Remove elements
+const popped = friends.pop(); // last
+
+console.log(popped);
+console.log(friends);
+
+const shifted = friends.shift("John");
+console.log(shifted);
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23));
+
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Steven");
+}
