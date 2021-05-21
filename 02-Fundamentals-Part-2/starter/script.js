@@ -224,6 +224,7 @@ console.log(
 );
 */
 
+/*
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
@@ -262,3 +263,8 @@ const jonas = {
 // Challenge
 // "Jonas is a 46-years old teacher and he has a driver's licence"
 console.log(jonas.getSummary());
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetitions ${rep}`);
+}
