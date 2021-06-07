@@ -271,6 +271,7 @@ for (let rep = 1; rep <= 10; rep++) {
 }
 */
 
+/*
 const jonas = [
   "Jonas",
   "Schmedtmann",
@@ -322,3 +323,24 @@ for (let i = 0; i < jonas.length; i++) {
 // jonas.forEach((element) => {
 //   console.log(element);
 // });
+*/
+
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(jonas[i]);
+}
+
+for (let exercise = 0; exercise < 4; exercise++) {
+  console.log(`---------- Starting exercise ${exercise}`);
+
+  for (let rep = 0; rep < 5; rep++) {
+    console.log(`Exercise ${exercise}: ligting weight repetition ${rep}`);
+  }
+}
